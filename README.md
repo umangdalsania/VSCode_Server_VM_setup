@@ -45,7 +45,7 @@
         ```sh
         sudo apt install -y openssh-server
         ```
-    2. check status of ssh by:
+    2. check the status of ssh by:
         ```sh
         systemctl status sshd
         ```
@@ -57,11 +57,11 @@
             Press "q" to exit
             ```
         
-        * if **Not active**, than run:
+        * if **Not active**, then run:
             ```sh
             sudo systemctl restart ssh
             ```
-            This will restart ssh server on Ubuntu
+            This will restart the ssh server on Ubuntu.
         
 
 ##Part 3 (Create SSh key on Windows/Mac and copy public key to Ubuntu):
@@ -77,7 +77,7 @@
     ssh-keygen -t rsa -b 4096 -f "$HOME\.ssh\id_rsa-remote-ssh"
     ```
 
-    * On Windows You may need to change permission of key therefore nevigate to:
+    * On Windows, You may need to change the permission of key; therefore, navigate to:
         ```sh
         C:\Users\<your_username>\.ssh\
         ```
@@ -85,7 +85,7 @@
         ```sh
         "Properties" > "Security" > "Edit"
         ```
-        Here select "**Everyone**" and press `Remove`, followed by "**Apply**" and "**Ok**" to save this changes
+        Here select "**Everyone**" and press `Remove`, followed by "**Apply**" and "**Ok**" to save these changes.
 
 
 ##### Get and Copy Public key:
@@ -94,7 +94,7 @@
         ```sh
         $HOME/.ssh/id_rsa-remote-ssh.pub
         ```
-    * For Windows, Copy contant of:
+    * For Windows, Copy the content of:
         ```sh
         C:\Users\<your_username>\.ssh\id_rsa-remote-ssh.pub
         ```
@@ -123,13 +123,13 @@
             ```sh
             $HOME/.ssh/config
             ```
-            Save this changes using "CMD + s"?
+            Save these changes using "CMD + s"?
 
         * For Windows type:
             ```sh
             C:\\Users\\<your_username>\\.ssh\\config
             ```
-            Save this changes using "Ctrl + s"
+            Save these changes using "Ctrl + s"
         
 ##### To Configer config file:
 * Paste following in your **config** file create at path above:
@@ -142,8 +142,8 @@
     ```
 
 ##Part 5 (Connect to Ubuntu from VS Code):
-<!-- FIXME: Need Picture of icon-->
-* look for Remont Connect icon which is blue icon with "><" in it
+<!-- FIXME: Need Picture of an icon-->
+* look for the Remont Connect icon, which is a blue icon with "><" in it
 * Click on it and select:
     ```sh
     "remote-SSH: Connect to Host..."
